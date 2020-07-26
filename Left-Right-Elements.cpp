@@ -1,3 +1,55 @@
+/
+   print a Matrix with Y at (i,i) always and at (i,j) if it satisfies a condition else print N.
+   conditions: outgoing at i must be Y and incoming at j must be Y and mod(i-j) must be 1.
+       
+   Sample Input:                         
+    5
+    2
+    YY
+    YY
+    2
+    NY
+    YY
+    2
+    NN
+    YY
+    5
+    YNNYY
+    YYYNY
+    10
+    NYYYNNYYYY
+    YYNYYNYYNY
+    
+    
+    Sample Output:
+    Case #1: 
+    YY
+    YY
+    Case #2: 
+    YY
+    NY
+    Case #3: 
+    YN
+    NY
+    Case #4: 
+    YNNNN
+    YYNNN
+    NNYYN
+    NNNYN
+    NNNYY
+    Case #5: 
+    YYYNNNNNNN
+    NYYNNNNNNN
+    NNYNNNNNNN
+    NNYYNNNNNN
+    NNYYYNNNNN
+    NNNNNYNNNN
+    NNNNNNYYYN
+    NNNNNNYYYN
+    NNNNNNNNYN
+    NNNNNNNNYY    
+*/
+
 #include<fstream>
 #include<vector>
 #include<string>
@@ -59,3 +111,8 @@ int main(){
 
     return 0;
 }
+
+
+
+
+
