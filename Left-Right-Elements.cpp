@@ -1,4 +1,4 @@
-/
+/*
    print a Matrix with Y at (i,i) always and at (i,j) if it satisfies a condition else print N.
    conditions: outgoing at i must be Y and incoming at j must be Y and mod(i-j) must be 1.
        
