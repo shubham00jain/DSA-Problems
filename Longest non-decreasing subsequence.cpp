@@ -13,7 +13,7 @@
    1. initialise all elements in dp = 1.
    2. compare the next element in the array with all of the previous elements starting from 1.
       If the element is greater than the previous element, check its corresponding value in the DP table
-      If the DP[previous element]+1 is greater than DP[current element]. Replace DP Value of the current element with the other one.
+      If the DP[previous element]+1 is greater than DP[current element], update DP Value of the current element with DP[previous element] + 1.
    */
 
 
