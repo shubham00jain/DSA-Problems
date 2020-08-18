@@ -7,10 +7,12 @@ eg.. string1 = "COMPUTER"
      will have LCS  = 3 => "OUE"  
      some other common subseq. are = "OU", "E", "UE" etc.
      
-     The naive approach is to make a recursive function and call lcs everytime.
+     The naive approach is to make a recursive function and call lcs everytime. (approch will be same as below except 
+     rather than storing values in a dp table we will make a recursive call at that point).
      Time complexity = O(n*2^n)
      
-     We will use DP. (see gfg https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/ )
+     
+     Optimised way is to use DP. (see gfg https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/ )
      1. make a dp table.
      2. initialize all elemnets of row = 0 and cloumn = 0 equal to 0.
      3. now interate over the strings and if: string 1 [i] == string 2 [j] then check the diagonally left element and add 1 to it.
@@ -20,8 +22,8 @@ eg.. string1 = "COMPUTER"
 */
 
 
-//------------------------------------------------------Naive solution------------------------------------------
-//------------------------------------------------------Naive solution------------------------------------------
+//------------------------------------------------------Naive recusrive solution------------------------------------------
+//------------------------------------------------------Naive recursive solution------------------------------------------
 
 #include <bits/stdc++.h>
 using namespace std;
