@@ -1,0 +1,9 @@
+This is another mathematics puzzle.
+Suppose you are playing a game where there are 3 doors. 2 of the doors have a goat behind them and one of the has a car.
+Suppose you choose door no 1 and then the host(who knows the correct answer) opens a door(say no. 3) revealing a goat behind it.
+Problem Statement: Should you switch to door 2 or not?
+
+Ans: You should switch to door 2, because the probabilty of getting a car in door 2 is 66.66% whereas the probabilty of getting car 
+behind door 1 is 33.33% only.
+See numberphile's video:
+https://www.youtube.com/watch?v=4Lb-6rxZxx0
