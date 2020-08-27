@@ -16,5 +16,6 @@ There are mainly 2 types of tree traversal.
 2. BFS - going along the breath of the tree while following some common rule.
 */
 
-//------------------recursive code for DFS BT traversals-------------------------
+//------------------Tree using structure-------------------------
 
+#include<bits/stdc++.h>
