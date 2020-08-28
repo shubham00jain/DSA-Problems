@@ -3,10 +3,14 @@ A tree is a special type of graph, so it typically has 2 types of traversal:
 1. DFS - access the nodes while going through depth of the tree.
 2. BFS - access the nodes while going thorough breadth of the tree. 
 
-
+In trees DFS has three types:
+1. Inorder
+2. Preorder
+3. Postorder
 
 */
 
+//--------------------DFS using recursion---------------------------
 
 void inorder( node * root){
  if(node!=NULL){
@@ -33,3 +37,6 @@ void postorder( node * root){
    cout<<root->data;
  }
 }
+
+
+
