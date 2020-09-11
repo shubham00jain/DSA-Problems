@@ -1,5 +1,5 @@
 // add and return root node value of 2 BSTs if they exists else return the node which exists.
-
+// https://leetcode.com/problems/merge-two-binary-trees/
 class Solution {
 public:
     void solve(TreeNode *t1, TreeNode *t2, TreeNode *p1, TreeNode *p2){
