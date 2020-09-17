@@ -41,3 +41,28 @@ Weakly connected - if a directed graph can be converted into a strngly connected
 - Cyclic Graphs / Closed Paths - where a path can be formed in which the start and end point is same and its length is greater than 0.
 
 /*
+
+//NOTE: There is another way to make a graph using classes and using stl list for adj list  
+//but this is the way it is made on codeforces and everywhere else.
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+vector<int> Graph(int E, int V){
+          vector<int> adj;
+          
+          for(int i = 0; i<N; i++){
+                    int u,v;
+                    cin>>u>>v;
+                    adj[v].push_back(v);
+          }
+          return adj;
+}
+
+int main(){
+         vector<int> adj = Graph(E,V);
+}
+
+
