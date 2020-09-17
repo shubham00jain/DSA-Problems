@@ -14,8 +14,8 @@ It is a undirected graph.
 
 - A graph can be weighted or non-weighted i.e going to some node from start node may be costiler than the other. This can help in making a mathematical model of intercity roadmap.
 
-- A graph can have self-loop i.e a node is connected to itself. Both undirected and bidirected graphs can have parellel edges or multi-edges i.e. the two nodes are connected
-to each other with more than 1 edge. This is useful in showing all the different flights by different companies with varying parices in a country.
+- A graph can have self-loop i.e a node which is connected to itself. Both undirected and bidirected graphs can have parellel edges or multi-edges i.e. the two nodes are connected
+to each other with more than 1 edge. This is useful in showing all the different flights by different companies with varying prices in a country.
 
 - A graph having neither self-loops nor parellel edges is called a simple graph.
 
@@ -39,6 +39,12 @@ A Path is sometimes refered to as a simple path and a walk is refered to as a pa
 Weakly connected - if a directed graph can be converted into a strngly connected graph by treating all the graph as undirected graph. Then its called weakly connected graph.
 
 - Cyclic Graphs / Closed Paths - where a path can be formed in which the start and end point is same and its length is greater than 0.
+
+A graph can be represented majorly in three ways:
+1. Using Vertex List and Edge List -> Takes |E| time for scanning a node. |E| is almost equivalent to |V|^2 i.e. O(n^2). In general we want to keep our operations in O(|V|) 
+and not it O(|E|).
+2. Using Adjacency Matrix -> Takes too much space and time. Stores redunant 0's in every row.
+3. Using Adjacency List -> Only practical way to make a graph using real world data.
 
 /*
 
