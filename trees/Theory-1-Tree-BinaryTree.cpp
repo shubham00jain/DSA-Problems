@@ -33,7 +33,7 @@ struct Node{
 }
 
 Node * newNode(int val){
-  Node * temp = new Node();
+  Node * temp = new Node;
   temp->data = val;
 }
 
