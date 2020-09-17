@@ -12,7 +12,7 @@ eg.       A - B - E
 - A social network uses graph to suggest friends to a user. It simply has to suggest all the nodes which are connected to the nodes connected with the user directly. 
 It is a undirected graph.
 
-- A graph can be weighted or non-weighted i.e going to some node may be costiler than the other. This can help in making a mathematical model of intercity roadmap.
+- A graph can be weighted or non-weighted i.e going to some node from start node may be costiler than the other. This can help in making a mathematical model of intercity roadmap.
 
 - A graph can have self-loop i.e a node is connected to itself. Both undirected and bidirected graphs can have parellel edges or multi-edges i.e. the two nodes are connected
 to each other with more than 1 edge. This is useful in showing all the different flights by different companies with varying parices in a country.
