@@ -16,7 +16,7 @@ For reasoning, watch this video again : https://www.youtube.com/watch?v=ZdY1Fp9d
 //------------BFS--------------
 
 //DO NOT MAKE A GRAPH USING CLASSES
-//UNLESS EXPLICITLY SAid
+//UNLESS EXPLICITLY MENTIONED
 
 
 vector <int> bfs(vector<int> g[], int N) {
@@ -44,10 +44,66 @@ vector <int> bfs(vector<int> g[], int N) {
     }
 }
 
+//-----------------------DFS------------------------
+//-------------------using recursion----------------
+
+void solve(int v, vector<int> adj[], vector<int>& res, vector<int>& vis){
+    
+    for(auto i : adj[v]){
+        if(!vis[i]){
+            res.push_back(i);
+            vis[i] = 1;
+            solve(i,adj,res,vis);
+        }
+    }
+
+    return;
+}
+
+vector <int> dfs(vector<int> g[], int N)
+{
+
+    vector<int> vis(N+1, 0);
+    vis[0] = 1;
+    vector<int> res;
+    res.push_back(0);
+    solve(0,g,res,vis);
+    
+    return res;
+}
 
 
+//------------------DFS----------------------------------
+//------------------using stack(iteration/ imperative code)
 
+vector <int> dfs(vector<int> g[], int N)
+{
+    
+    stack<int> s;
+    s.push(0);
+    vector<int> vis(N+1, 0);
+    vis[0] = 1;
+    vector<int> res;
+    res.push_back(0);
+    
+    while(!s.empty()){
+        int k = s.top();
+        s.pop();
+        if(!vis[k]){
+            res.push_back(k);
+            vis[k] = 1;
+        }
+            
+        
+        for(auto i : g[k]){
+            if(!vis[i]){
+               s.push(i);
+            }
+        }
+    }
+    
+    return res;
+}
 
-
-
-
+// Time : O(|V| + ||E| )
+// Space : O(|V|)
