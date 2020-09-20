@@ -51,6 +51,7 @@ void postorder( node * root){
 }
 
 
+//----------------------DFS using Queue-------------------------
 
 
 vector<int> levelOrderTraversal{node * root}{
@@ -74,7 +75,8 @@ vector<int> levelOrderTraversal{node * root}{
 
 
 //get the levels seprated by -1 in the result
-
+// or levels seprated by NULL
+// another way to do this is to use 2 queues Qp and Qc and push all the children in the Qc and check for while(Qp isnotempty and Qc isnotempty)
 vector<int> levelOrderTraversal{node * root}{
 
  queue<node *> q;
