@@ -1,5 +1,14 @@
 // https://www.geeksforgeeks.org/merge-sort/
+/*
+Time:
+best - O(nlog(n))
+avg  -  O(nlog(n))
+worst - o(nlog(n))
 
+Space : O(n)
+It makes 2 extra auxillary containers in the merge function.
+This extra space is one of the major reason why language libraries don't use merge sort and use quick sort instead. 
+*/
 
 void merge(vector<int> vec, int l, int m, int r){
     vector<int> le, ri;
