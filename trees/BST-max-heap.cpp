@@ -1,8 +1,9 @@
 /*
 Algorithm:
 1. traverse the tree in in-order and store in a array.
-(This step will give a ascending order sorted array).
+2. sort the final array.
 2. Now traverse the tree again in postorder and replace root value with respective array values.
+This works beacause the array is sorted!
 https://www.geeksforgeeks.org/initialize-a-vector-in-cpp-different-ways/
 */
 
