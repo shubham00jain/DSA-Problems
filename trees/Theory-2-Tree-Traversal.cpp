@@ -51,7 +51,7 @@ void postorder( node * root){
 }
 
 
-//----------------------DFS using Queue-------------------------
+//----------------------BFS using Queue-------------------------
 
 
 vector<int> levelOrderTraversal{node * root}{
