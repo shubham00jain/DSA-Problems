@@ -9,3 +9,4 @@
 
 * ### Articulate Vertex or Cut Vertex:
   A vertex is called ariculate vertex iff by removing or cutting that vertex disconnects the graph and makes one more component in the graph.
+
