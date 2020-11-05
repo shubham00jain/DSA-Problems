@@ -44,6 +44,16 @@ vector <int> bfs(vector<int> g[], int N) {
     }
 }
 
+/*
+Applications BFS:
+1. Shortest path between 2 nodes
+2. All nodes within one connected component
+3. Find all connected components in a graph
+4. Test a graph for bipartiatness 
+*/
+
+
+
 //-----------------------DFS------------------------
 //-------------------using recursion----------------
 
@@ -107,3 +117,11 @@ vector <int> dfs(vector<int> g[], int N)
 
 // Time : O(|V| + ||E| )
 // Space : O(|V|)
+/*
+Application of DFS:
+1. Topological sort
+2. Find connected components
+3. Find articulate points
+4. Find strongly connected components
+5. Solve puzzles such as mazes
+*/
