@@ -13,6 +13,10 @@ Applications:
 3. Pipeline of computing jobs.
 4. Checking for symbolic link loop.
 5. Evaluting formulae in spreadsheet.
+
+https://www.geeksforgeeks.org/topological-sorting/
+https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/
+
 */
 
 void dfs(vector<int> adj[], int s, vector<int>& vis,vector<int>& res){
