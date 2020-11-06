@@ -6,6 +6,13 @@
 5. We can modify DFS and use a stack instead of directly printing the visited vertex. We can first visit all the vertex adjacent to the given vertex and all vertex adjacent to that
 and so on... and once the recursive loop and backtracking is done, we can push the vertex in the stack.
 6. Print the stack.
+
+Applications:
+1. Represent course prerequisites.
+2. Detecting deadlocks.
+3. Pipeline of computing jobs.
+4. Checking for symbolic link loop.
+5. Evaluting formulae in spreadsheet.
 */
 
 void dfs(vector<int> adj[], int s, vector<int>& vis,vector<int>& res){
