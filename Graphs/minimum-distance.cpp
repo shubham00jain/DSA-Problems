@@ -20,8 +20,6 @@ int bfs(int v, vector<int> adj[], vector<int>& vis){
     while(!q.empty()){
         int u = q.front();
         q.pop();
-        if(u==v)
-            level[u];
         for(auto i : adj[u]){
             if(!vis[i]){
                 level[i] = level[u] + 1;
