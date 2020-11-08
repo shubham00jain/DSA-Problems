@@ -1,6 +1,7 @@
 /*
 1. Dijkstra Algorithm is used to find shortest path from a single source in a weighted graph. 
 2. It fails if any weight is negative so it should only be used with +ve weights.
+3. It is a greedy Algorithm because it uses min heap which works greedily.
 
 Algorithm:
 1. Create a min heap priority_queue of pair<int,int>. 
