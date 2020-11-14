@@ -6,3 +6,12 @@ i.e the space should be less than O(n).
 ## Stable Algo:
 A sorting algo is caled stable when the relative order of same elements is maintained. It is only useful when the indexes or keys have a significant value. for eg. in a map
 when two elements A:1 and B:1 have same value, then the relative position of A and B should be preserved.
+
+## Notes:
+* Bubble sort takes comparisons and swaps (inversions) in both average case
+and in worst case.
+* Selection sort takes comparisons and n swaps.
+* Insertion sort takes comparisons and swaps in average case and in the worst
+case they are double.
+* Insertion sort is almost linear for partially sorted input.
+* Selection sort is best suits for elements with bigger values and small keys.
