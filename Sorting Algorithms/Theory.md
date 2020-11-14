@@ -8,10 +8,10 @@ A sorting algo is caled stable when the relative order of same elements is maint
 when two elements A:1 and B:1 have same value, then the relative position of A and B should be preserved.
 
 ## Notes:
-* Bubble sort takes comparisons and swaps (inversions) in both average case
+* Bubble sort takes  n^/2 comparisons and n^2/2 swaps (inversions) in both average case
 and in worst case.
-* Selection sort takes comparisons and n swaps.
-* Insertion sort takes comparisons and swaps in average case and in the worst
+* Selection sort takes n^2/2 comparisons and n swaps.
+* Insertion sort takes n^2/4 comparisons and n^/8 swaps in average case and in the worst
 case they are double.
 * Insertion sort is almost linear for partially sorted input.
 * Selection sort is best suits for elements with bigger values and small keys.
