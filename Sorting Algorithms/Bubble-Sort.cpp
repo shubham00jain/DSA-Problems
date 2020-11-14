@@ -1,6 +1,7 @@
 /*
 1. It is the simplest of all the sorts.
 2. In this algo, we check every element with its next element and if they statisfy our condition we swap them.
+3. It is guaranteed that after every iteration we will get at least one element at its right place.
 
 Time:
 Best: O(n^2)
