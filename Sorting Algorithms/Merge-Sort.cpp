@@ -52,10 +52,12 @@ void merge(vector<int> vec, int l, int m, int r){
 
 
 void mergesort(vector<int> vec, int l, int r){
-    int m = ( l + (r-1) )/2;
-    mergesort(vec,l,m);
-    mergesort(vec,m+1,r);
-    merge(vec,l,m,r);
+    if(r>1){
+        int m = ( l + (r-1) )/2;
+        mergesort(vec,l,m);
+        mergesort(vec,m+1,r);
+        merge(vec,l,m,r);
+    }
 }
 
 
