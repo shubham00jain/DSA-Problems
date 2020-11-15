@@ -34,7 +34,7 @@ int Partition(int A[], int start, int end){
 void Quicksort(int A[], int start, int end){
   if(start<end ){
     int pIndex = Partition(A,start,end);
-    QuickSort(A,start,p);
+    QuickSort(A,start,p-1);
     QuickSort(A,p+1,end);
   }
 }
