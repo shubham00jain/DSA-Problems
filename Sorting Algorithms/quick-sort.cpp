@@ -5,9 +5,8 @@ Quick Sort can be done in two ways:
 1. Chosing the same position for the pivot everytime  (start, end or median).
 2. Choosing random pivot.
 
-https://www.geeksforgeeks.org/quick-sort/
-https://www.geeksforgeeks.org/in-place-algorithm/
-https://www.geeksforgeeks.org/stability-in-sorting-algorithms/
+In Randomized quicksort we can either randomize the input array or choose a random pivot. The latter is easier and more logical to implement.
+To make the chances even better, we can choose 3 random pivots and then pick the median of them!
 
 Time:
 Best - O(nlog(n))
