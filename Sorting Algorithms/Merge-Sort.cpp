@@ -52,7 +52,7 @@ void merge(vector<int> vec, int l, int m, int r){
 
 
 void mergesort(vector<int> vec, int l, int r){
-    if(r>1){
+    if(r>l){
         int m = ( l + (r-1) )/2;
         mergesort(vec,l,m);
         mergesort(vec,m+1,r);
