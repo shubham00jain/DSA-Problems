@@ -17,5 +17,24 @@ Average - O(nlog(n))
 Space : O(1)
 */
 
+int Partition(int A[], int start, int end){
+    int pivot = A[end];
+    int pIndex = start;
+  
+    for(int i = start; i<end-1;i++){
+      if(A[i]<=pivot ){
+        swap(A[i], A[pIndex])
+        pIndex++;
+      }
+    }
+    swap(A[pIndex], pivot);
+    return pIndex;
+}
 
-
+void Quicksort(int A[], int start, int end){
+  if(start<end ){
+    int pIndex = Partition(A,start,end);
+    QuickSort(A,start,p);
+    QuickSort(A,p+1,end);
+  }
+}
