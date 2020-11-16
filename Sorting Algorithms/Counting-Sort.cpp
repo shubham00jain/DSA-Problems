@@ -17,19 +17,29 @@ Space:
 O(n+k)
 */
 
-void countingsort(int arr[], int n){
-  int res[n], aux[n];
-  
-  for(int i=0;i<n;i++){
-    aux[a[i]]++;
-  }
-  
-  for(int i=1; i<n;i++){
-    aux[i] = aux[i-1];
-  }
-  for(int i=0;i<n;i++){
-    res[aux[a[i]]] = a[i];
-    res[aux[a[i]]]--;
-  }
-  return res;
+void countSort(){
+    vector<int> v = { 1, 7, 3, 15, 2,0, 0, 1,15 };
+    int n = v.size();
+    int m = *max_element(v.begin(),v.end());
+    vector<int> aux(m+1,0);
+    vector<int> res(n,0);
+    
+    for(int i=0;i<v.size();i++){
+        aux[v[i]]++;
+    }
+    for(int i=1;i<m+1;i++){
+        aux[i]+= aux[i-1];
+    }
+    
+    for(int i=0;i<n;i++){
+        res[aux[v[i]]-1] = v[i];
+        --aux[v[i]];
+    }
+
+    //print
+    // for(int i=0;i<res.size();i++){
+    //     cout<<res[i]<<" ";
+    // }
 }
+
+
