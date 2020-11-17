@@ -15,6 +15,9 @@ Average: O(n+k)
 
 Space:
 O(n+k)
+
+Stable: Yes
+In-place: No
 */
 
 void countSort(){
