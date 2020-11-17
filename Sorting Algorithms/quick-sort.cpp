@@ -16,7 +16,7 @@ Average - O(nlog(n))
 Space : O(1)
 
 Stable: No.
-In-place: Yes.
+In-place: It is debatable. It uses O(log(n)) space to store the recursive calls but it does not use extra memory to sort. So, acc. to me the ans should be Yes.
 */
 
 int Partition(int A[], int start, int end){
