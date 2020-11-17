@@ -10,6 +10,9 @@ Worst: O(n^2)
 Average: O(n)
 
 Space: O(1)
+
+Stable: Yes
+In-place: Yes
 */
 
 
