@@ -10,6 +10,9 @@ Space: O(1)
 
 Best case can be improved by checking if there was swap in the previous pass.
 Best: O(n)
+
+Stable: Yes
+In-place: Yes
 */
 
 void bubblesort(){
