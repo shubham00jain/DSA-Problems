@@ -14,6 +14,9 @@ Worst - O(n^2) But this can always be avoided using randomised pivots
 Average - O(nlog(n))
 
 Space : O(1)
+
+Stable: No.
+In-place: Yes.
 */
 
 int Partition(int A[], int start, int end){
