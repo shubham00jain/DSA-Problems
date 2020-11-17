@@ -8,6 +8,9 @@ worst - o(nlog(n))
 Space : O(n)
 It makes 2 extra auxillary containers in the merge function.
 This extra space is one of the major reason why language libraries don't use merge sort and use quick sort instead. 
+
+Stable: Yes
+In-place: No. It can be made in place by making some complicated changes in the merge function.
 */
 
 void merge(vector<int> vec, int l, int m, int r){
