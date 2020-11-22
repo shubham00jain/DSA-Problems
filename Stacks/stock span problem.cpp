@@ -1,35 +1,27 @@
 //https://practice.geeksforgeeks.org/problems/stock-span-problem/0
 
-#include <bits/stdc++.h>
-using namespace std;
-
-
-
 int main() {
     int t;
     cin>>t;
     while(t--){
         int n;
         cin>>n;
-        stack<int> s,temp;
-        vector<int>res;
+        vector<int> arr;
         for(int i=0;i<n;i++){
-            int num = 0;
             int x;
             cin>>x;
-            temp = s;
-            while(!temp.empty() && temp.top()<=x){
-                temp.pop();
-                num+=1;
-            }
-            num+=1;
-            s.push(x);
-            res.push_back(num);
+            arr.push_back(x);
         }
+        stack<int> s;
         for(int i=0;i<n;i++){
-            cout<<res[i]<<" ";
+            while(!s.empty() && arr[i] >= arr[s.top()] ){
+                s.pop();
+            }
+            int ans = (s.empty() ? (i+1) : (i-s.top()) );
+            cout<<ans<<" ";
+            s.push(i);
         }
         cout<<endl;
     }
-	return 0;
+
 }
