@@ -4,9 +4,11 @@ using namespace std;
 #define MAX 100
 
 class Stack{
+  private:
+  int top;
+  int a[MAX];
+  
   public:
-    int top;
-    int a[MAX];
     Stack(){
       top = 1;
     }
