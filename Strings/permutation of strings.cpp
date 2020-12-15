@@ -2,6 +2,7 @@
 
 void solve(string s, int l, int r, map<string,int>& mp){
     if(l==r){
+	//map is used to sort the result
         mp[s] = 1;   
     }
         
