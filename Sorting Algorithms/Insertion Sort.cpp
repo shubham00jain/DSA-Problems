@@ -7,7 +7,7 @@ cards and *insert* the card at its correct position inside the sorted hand.
 Time:
 Best: O(n)
 Worst: O(n^2)
-Average: O(n)
+Average: O(n^2)
 
 Space: O(1)
 
