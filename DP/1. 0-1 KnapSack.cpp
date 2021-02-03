@@ -5,7 +5,7 @@
 // https://www.youtube.com/watch?v=ntCGbPMeqgg&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=5&ab_channel=AdityaVerma
 
 /*
-To solve every DP approach a general approach can be follwed:
+To solve every DP problem, a general approach can be follwed:
 1. Write its recursive solution.
 2. Memoize that recursive solution.
 3. (Optional: for bottom up approach)Make a bottom-up approach from the recursive approach.
