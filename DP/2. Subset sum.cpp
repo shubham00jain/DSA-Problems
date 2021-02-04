@@ -9,7 +9,7 @@ Almost an identical question to kanpsack. We need to choose some integers and fi
 */
 
 
-// Recurvise appraoch
+// Recursive approach
 
 //helper fxn
 int subset(int* arr, int n, int sum, vector<vector<int>> &dp ){
@@ -35,7 +35,7 @@ int solve(int* A, int n1, int B) {
     return subset(A,n1-1,B);
 }
 
-//top down recursive apprach with memoization --------------------------------------------------
+//top down recursive approach with memoization --------------------------------------------------
 //-----------------------------------------------------------------------------------
 
 
@@ -62,5 +62,36 @@ int solve(int* A, int n1, int B) {
     return subset(A,n1-1,B, dp);
 }
 
-//
+// bottom-up iterative solution
+
+int Solution::solve(vector<int> &A, int B) {
+    int n1 = A.size();
+    vector<vector<int>> dp(n1+2, vector<int>(B+2, 0) );
+    
+    for(int i=0;i<n1+1;i++){
+        for(int j=0;i<B+1;j++){
+            if(i==0)
+                dp[i][j] = 0;
+            if(j==0)
+                dp[i][j] = 1;
+        }
+    }
+    
+    for(int i=1;i<n1+1;i++){
+        for(int j=1;i<B+1;j++){
+            
+            if( A[i-1] > j )
+                dp[i][j] = dp[i-1][j];
+            
+            else{
+                if(dp[i-1][j-A[i-1]] || dp[i-1][j] )
+                    dp[i][j] = 1;
+                else
+                    dp[i][j] = 0;
+            }
+        }
+    }
+    return dp[n1][B];
+    
+}
 
