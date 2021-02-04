@@ -16,6 +16,16 @@ To know if any question is of DP(or recursion in that matter), try to find these
 3. (In case of DP) Overlapping subproblem. This can ONLY happen if we have more than 1 recursive fxn calls.
 
 Watch the videos again, for further reference.
+
+
+
+6 related questions to this problem are:
+1. Subset sum problem
+2. equal sum partition
+3. count of subset sum
+4. minimum subset sum diffrence
+5. target sum
+6. no. of subset given diff.
 */
 
 
