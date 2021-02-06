@@ -14,6 +14,7 @@ To know if any question is of DP(or recursion in that matter), try to find these
 1. Choices
 2. Optimal result
 3. (In case of DP) Overlapping subproblem. This can ONLY happen if we have more than 1 recursive fxn calls.
+4. (Optional) Sometimes a combinatorics problem also involves DP but almost always it is preceded by some groundwork mathematics.
 
 Watch the videos again, for further reference.
 
