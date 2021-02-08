@@ -56,3 +56,66 @@ int solve(string s1, string s2, int x, int y){
 int lcs(int x, int y, string s1, string s2){
     return solve(s1,s2,x,y);
 }
+
+//-----------------------------------------------------Top Down with DP with memoization-------------
+//---------------------------------------------------------------------------------------------------
+
+int solve(string s1, string s2, int x, int y, vector<vector<int>>&dp){
+    
+    //base
+    if(dp[x][y]!=-1)
+        return dp[x][y];
+        
+    if(x==0 || y==0)
+        return dp[x][y]=  0;
+    
+        
+    //equal value    
+    if( s1[x-1]==s2[y-1] )
+        return dp[x][y]= 1 + solve(s1,s2,x-1,y-1,dp);
+    //not equal
+    else{
+        // reduce s1    
+        int a = solve(s1,s2,x-1,y,dp);
+        //reduce s2
+        int b = solve(s1,s2,x,y-1,dp);
+        return dp[x][y]= max(a,b);
+    }
+    
+    return dp[x][y]= 0;
+}
+
+
+int lcs(int x, int y, string s1, string s2){
+    vector<vector<int>> dp(x+1, vector<int>(y+1, -1) );
+    return solve(s1,s2,x,y,dp);
+}
+
+// --------------------Bottom up with memoization--------------------------------------
+
+int lcs(int x, int y, string text1, string text2){
+        vector<vector<int>> dp(x+1, vector<int>(y+1) );
+        
+        for(int i=0;i<x+1;i++){
+            for(int j=0;j<y+1;j++){
+                if(i==0 || j==0)
+                    dp[i][j]  = 0;
+            }
+        }
+        
+        for(int i=1;i<x+1;i++){
+            for(int j=1;j<y+1;j++){
+                
+                if(text1[i-1]==text2[y-1]){
+                    dp[i][j] = 1 + dp[i-1][j-1];                  
+                }
+                
+                else{
+                    int a = dp[i-1][j];
+                    int b = dp[i][j-1];
+                    dp[i][j] = max( a,b );
+                }
+            }
+        }
+        return dp[x][y];
+}
