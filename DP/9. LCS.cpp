@@ -11,7 +11,7 @@ both of the choices.
 Problems similar to this:
 1. Longest common substring
 2. Print LCS
-3. Shortest common supersquence
+3. Shortest common supersquence -> len(string a) + len(string b) - len(LCS)
 4. Print SCS
 5. Min num of insertion or deletion to make a -> b
 6. Largest repeating subsquence
