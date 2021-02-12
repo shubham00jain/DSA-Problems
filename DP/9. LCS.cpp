@@ -21,7 +21,7 @@ Problems similar to this:
 10. longest palindormic subsequnce. -> LCS of a, reverse (a)
 11. longest palindromic substring.
 12. count of palindromic substring.
-13. min no. of deletion in a string to make it a palindrome.
+13. min no. of deletion in a string to make it a palindrome. -> length(a) - lcs(a, rev of a)
 14. min no. of addition in a string to make it a palindrome.
 */
 
@@ -103,19 +103,23 @@ int lcs(int x, int y, string text1, string text2){
             }
         }
         
+        int lcs = INT_MIN;
+    
         for(int i=1;i<x+1;i++){
             for(int j=1;j<y+1;j++){
                 
                 if(text1[i-1]==text2[y-1]){
-                    dp[i][j] = 1 + dp[i-1][j-1];                  
+                    dp[i][j] = 1 + dp[i-1][j-1];   
+                    lcs = dp[i][j] > lcs ? dp[i][j] : lcs;
                 }
                 
                 else{
                     int a = dp[i-1][j];
                     int b = dp[i][j-1];
                     dp[i][j] = max( a,b );
+                    lcs = dp[i][j] > lcs ? dp[i][j] : lcs;
                 }
             }
         }
-        return dp[x][y];
+        return lcs;
 }
