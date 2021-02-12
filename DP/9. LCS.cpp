@@ -18,7 +18,7 @@ Problems similar to this:
 7. length of longest subsqunce of a which is a substring of b.
 8. subsequnce pattern matching.
 9. count how many a appears as subsqunece in b.
-10. longest palindormic subsequnce.
+10. longest palindormic subsequnce. -> LCS of a, reverse (a)
 11. longest palindromic substring.
 12. count of palindromic substring.
 13. min no. of deletion in a string to make it a palindrome.
