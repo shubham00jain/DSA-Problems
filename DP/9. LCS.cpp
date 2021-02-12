@@ -9,11 +9,11 @@ This is a fundamental DP problem. In this we have 3 (1 + 2) choices:
 both of the choices.
 
 Problems similar to this:
-1. Longest common substring
-2. Print LCS
+1. Longest common substring -> a little different than LCS
+2. Print LCS -> make lcs table. Start from dp[x][y] -> append whenever str1 == str2 in ans else goto max(x-1,y),(x,y-1) -> return reverse(ans).
 3. Shortest common supersquence -> len(string a) + len(string b) - len(LCS)
-4. Print SCS
-5. Min num of insertion or deletion to make a -> b
+4. Print SCS -> same as Print LCS
+5. Min num of insertion or deletion to make a -> b -> len(string a) + len(string b) - 2*lcs
 6. Largest repeating subsquence
 7. length of longest subsqunce of a which is a substring of b.
 8. subsequnce pattern matching.
