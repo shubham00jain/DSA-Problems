@@ -12,3 +12,57 @@ Now if we can conclude this then its pretty easy to construct the LCS:
 
 Finally revserse the string to get the correct string as answer.
 */
+
+int lcs(int x, int y, string text1, string text2){
+        vector<vector<int>> dp(x+1, vector<int>(y+1) );
+        
+        for(int i=0;i<x+1;i++){
+            for(int j=0;j<y+1;j++){
+                if(i==0 || j==0)
+                    dp[i][j]  = 0;
+            }
+        }
+        
+        for(int i=1;i<x+1;i++){
+            for(int j=1;j<y+1;j++){
+                
+                if(text1[i-1]==text2[y-1]){
+                    dp[i][j] = 1 + dp[i-1][j-1];                  
+                }
+                
+                else{
+                    int a = dp[i-1][j];
+                    int b = dp[i][j-1];
+                    dp[i][j] = max( a,b );
+                }
+            }
+        }
+        return dp[x][y];
+}
+
+// this will return the LCS
+string printLCS(vector<vector<int>> dp, int x, int y, string a, string b){
+  
+  string s = "";
+  int i = x;
+  int j = y;
+  
+  while(i>0 && j>0){
+      if( a[i-1] == b[j-1] ){
+        s+=a[i-1];
+        i--;
+        j--;
+      }
+      else if( dp[i-1] == d[i] ){
+        i--;
+      }
+      else{
+        j--;
+      }
+  }
+  
+  reverse(s.begin(),s.end());
+  return s;
+  
+}
+
