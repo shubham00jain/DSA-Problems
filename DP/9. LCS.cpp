@@ -22,8 +22,8 @@ Problems similar to this:
 11. longest palindromic substring.
 12. count of palindromic substring.
 13. min no. of deletion in a string to make it a palindrome. -> length(a) - lcs(a, rev of a)
-14. min no. of addition in a string to make it a palindrome.
-15. Edit Distance (Very vaguely dependant on LCS)
+14. min no. of addition in a string to make it a palindrome. -> length(a) - lcs(a, rev of a)
+15. Edit Distance  -> (Very vaguely dependant on LCS)
 */
 
 
