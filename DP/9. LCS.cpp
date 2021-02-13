@@ -16,13 +16,14 @@ Problems similar to this:
 5. Min num of insertion or deletion to make a -> b -> len(string a) + len(string b) - 2*lcs
 6. Largest repeating subsquence
 7. length of longest subsqunce of a which is a substring of b.
-8. subsequnce pattern matching.
+8. subsequnce pattern matching. OR WildCard pattern Matching (A nice and quite different variation)
 9. count how many a appears as subsqunece in b.
 10. longest palindormic subsequnce. -> LCS of a, reverse (a)
 11. longest palindromic substring.
 12. count of palindromic substring.
 13. min no. of deletion in a string to make it a palindrome. -> length(a) - lcs(a, rev of a)
 14. min no. of addition in a string to make it a palindrome.
+15. Edit Distance (Very vaguely dependant on LCS)
 */
 
 
