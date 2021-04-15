@@ -1,0 +1,21 @@
+1. Find missing number in a array which has n-1 elements without duplicates
+sol - 1. Summation method - Calculate n*(n+1)/2 . now traverse the array and subtract element from this. Remaining is the result. MAY OVERFLOW. Time: O(n) , Space: O(1)
+    - 2. XOR method - find xor 2 times. for n numbers and for all elements. finally return the xor of both the results. DOES NOT OVERFLOW. Time: O(n) , Space: O(1)
+
+2. sort array of 0s, 1s and 2s - An example of dutch flag problem
+sol - 1. Use array/map to keep count of element frequencies. O (n), O (1) [only 3 elements]
+    - 2. Make 4 partitions of 0s,1s,2s and unknowns.
+
+3. Find 2 duplicates in a array of n+2 numbers
+sol - 1. Go to position of every element and multiply it with -1. O(n), O(1) [container modified]
+    - 2. Use map. O(n), O(n)
+    - 3. Make 2 eqs, one with sum of elements of array = n*n+1/2 and the other with product = n!. Solve the equations. O(n), O(1)
+
+4. Find more than 2 duplicates in an array
+sol - 1. Method 1 of previous ques. O (n) O(1)
+sol - 2. Use hashmap. O(n), O(n)
+
+5. Find a missing element and a duplcate element in a array of n elements.
+sol - 1. find repeating element by switching sign method. traverse again and element with positive sign is 
+     - 2. use map.
+     
