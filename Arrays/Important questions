@@ -19,3 +19,8 @@ sol - 2. Use hashmap. O(n), O(n)
 sol - 1. find repeating element by switching sign method. traverse again and element with positive sign is 
      - 2. use map.
      
+6. Merge 2 sorted array
+sol - 1. use insertion sort method. O(n1*n2), size: O(1)
+    - 2. use merge sort method. O(n1+n2), size:(n1+n2)
+    - 3. use map.
+7. 
