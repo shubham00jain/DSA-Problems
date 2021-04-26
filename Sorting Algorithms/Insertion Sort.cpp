@@ -25,7 +25,7 @@ void insertionSort(){
       int v = arr[i];
       int j = i;
       while(arr[j-1]>v && j>-1){
-        A[j-1] = A[j];
+        A[j] = A[j-1];
         j--;
       }
       A[j] = v;
