@@ -1,0 +1,57 @@
+https://www.geeksforgeeks.org/top-50-graph-coding-problems-for-interviews/
+Find the following questions on gfg or use the above link.
+
+
+Level 1
+Print Adjacency List
+BFS of Graph
+DFS of Graph
+Transitive Closure of a Graph
+Union-Find
+Detect Cycle using DSU
+Level 2
+Number of Provinces
+Find the number of islands
+Detect cycle in an undirected graph
+Hamiltonian Path
+Prerequisite Tasks
+Course Schedule
+Circle of Strings
+Snake and Ladder problem
+Bipartite Graph
+Maximum Bipartite Matching
+Detect cycle in a directed graph
+Find whether path exists
+Toplogical Sort
+Level of Nodes
+Possible paths between 2 vertices
+X Total Shapes
+Distance of nearest cell having 1
+Mother Vertex
+Unit Area of largest region of 1’s
+Rotten Oranges
+Minimum Swaps to Sort
+Steps by Knight
+Implementing Dijkstra Algorithm
+Neeman’s Shoes
+Minimum Spanning Tree
+Strongly Connected Components (Kosaraju’s Algo)
+Bridge Edge in Graph
+Flood Fill Algorithm
+Replace O’s with X’s
+Shortest Prime Path
+Word Search
+Construct binary palindrome by repeated appending and trimming
+Word Boggle
+Level 3
+Critical Connections
+Minimum Cost Path
+Strongly Connected Components (Tarjan’s Algo)
+Articulation Point – I
+Articulation Point – II
+Alien Dictionary
+Word Ladder I
+Word Ladder II
+Find number of closed islands
+Shortest Path by removing K walls
+Find the String
