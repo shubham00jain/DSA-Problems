@@ -1,0 +1,13 @@
+1. Two SUM -- 2 ways
+  1. 2 Pointer: sort array and use 2 pointer (one at start and one at end)
+  2. Hashmap: use hashmap and check the complement value of the current value
+
+2. Two sum sorted array -- use the 2 pointer approach from the above.
+
+3. 3 SUM -- 2 ways
+  1. Two pointer: sort the array and inside a for loop run 1st point of Two sum.
+  2. Hashmap: Run a for loop and inside the loop run 2 point of hashmap.
+  Note: Use 2 pointer method
+  Follow -up: Do without sorting -- now use hashmap
+  
+4. 
