@@ -19,24 +19,36 @@ Stable: No.
 In-place: It is debatable. It uses O(log(n)) space to store the recursive calls but it does not use extra memory to sort. So, acc. to me the ans should be Yes.
 */
 
-int Partition(int A[], int start, int end){
-    int pivot = A[end];
-    int pIndex = start;
-  
-    for(int i = start; i<end-1;i++){
-      if(A[i]<=pivot ){
-        swap(A[i], A[pIndex])
-        pIndex++;
-      }
+    void quickSort(int arr[], int low, int high)
+    {
+        
+        if (low < high) {
+            int pivot = partition(arr, low, high);
+            quickSort(arr, low, pivot-1);
+            quickSort(arr, pivot + 1, high);
+                
+        }
     }
-    swap(A[pIndex], pivot);
-    return pIndex;
-}
-
-void Quicksort(int A[], int start, int end){
-  if(start<end ){
-    int pIndex = Partition(A,start,end);
-    QuickSort(A,start,p-1);
-    QuickSort(A,p+1,end);
-  }
-}
+    
+    public:
+    int partition (int arr[], int low, int high)
+    {
+        
+        int pIndex = low;
+        int pivot = arr[high];
+        
+        for(int i=low; i<high;i++){
+            
+            if(arr[i] <=  pivot ){
+                swap(arr[i], arr[pIndex]);
+                pIndex++;
+            }
+        }
+        
+        swap(arr[pIndex], arr[high]);
+        
+        return pIndex;
+        
+        
+        
+    }
